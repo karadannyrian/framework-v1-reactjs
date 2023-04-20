@@ -8,7 +8,7 @@ function UnderConstruction() {
         setTimeout(() => {
             navigate('auth/signin')
         }, 2000);
-    }, []);
+    }, [navigate]);
     return (
         <div id='error-page'>
             <h1>{message}</h1>

@@ -9,7 +9,7 @@ import logo from '../../assets/logo/png/logo-color.png'
 import Avatar from '../../components/Avatar';
 import { Col, Row } from 'react-bootstrap';
 
-function LoginPage() {
+export default function LoginPage() {
     const navigate = useNavigate()
     useEffect(() => {
         document.body.style.background = '#afbabe'
@@ -56,7 +56,7 @@ function LoginPage() {
                 >
                     <Card.Body>
                         <div className='d-flex flex-wrap py-3'>
-                            <Avatar type={'roundedCircle'} src={logo} width={80} />
+                            <Avatar type={'roundedCircle'} src={logo} width={65} />
                             <div className='p-3 header-text'>SIGN IN</div>
                         </div>
                         <Form noValidate method='POST' validated={validated} onSubmit={handleSubmit}>
@@ -95,7 +95,7 @@ function LoginPage() {
                                         </Form.Group>
                                     </Col>
                                     <Col sm={12} md={6}>
-                                        <div className='text-info' style={{ cursor: 'pointer' }} onClick={() => navigate('auth/forgot-password')}>Forgot Password?</div>
+                                        <div className='text-info' style={{ cursor: 'pointer' }} onClick={() => navigate('/auth/forgot-password')}>Forgot Password?</div>
                                     </Col>
                                 </Row>
                             </div>
@@ -110,5 +110,3 @@ function LoginPage() {
         </div>
     );
 }
-
-export default LoginPage;

@@ -7,6 +7,7 @@ import ErrorPage from './ErrorPage';
 import UnderConstruction from './UnderConstruction';
 import DefaultConfig from './config';
 import LoginPage from './pages/auth/LoginPage';
+import ForgotPassword from './pages/auth/ForgotPassword';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/auth/signin",
     element: <LoginPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/auth/forgot-password",
+    element: <ForgotPassword />,
     errorElement: <ErrorPage />,
   },
 ]);
