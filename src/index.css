@@ -1,8 +1,21 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Comfortaa', 'DM Serif Display';
+  font-family: -apple-system, BlinkMacSystemFont, 'Comfortaa', 'DM Serif Display' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.main-color {
+  color: #61777F;
+}
+
+.secondary-color {
+  color: #87979d;
+}
+
+.tertiary-color {
+  color: #afbabe
 }
 
 code {
@@ -13,4 +26,20 @@ code {
 #error-page {
   text-align: center;
   margin-top: 60px;
+}
+
+.form-label {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  font-weight: 700;
+  font-size: 32px;
 }
